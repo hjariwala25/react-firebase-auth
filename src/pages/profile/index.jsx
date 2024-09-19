@@ -4,7 +4,7 @@ import { AuthContext } from "../../context";
 function ProfilePage() {
   const { user, handleLogout } = useContext(AuthContext);
 
-  console.log(user);
+  // console.log(user);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">

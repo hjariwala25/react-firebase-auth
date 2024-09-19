@@ -13,7 +13,7 @@ function LoginPage() {
     event.preventDefault();
 
     loginWithFirebase().then((result) => {
-      console.log(result, "result12345");
+      // console.log(result, "result12345");
       if (result) {
         setLoading(false);
         navigate("/profile");

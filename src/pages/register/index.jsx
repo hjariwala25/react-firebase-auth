@@ -16,7 +16,7 @@ function RegisterPage() {
 
   const navigate = useNavigate();
 
-  console.log(registerFormData);
+  // console.log(registerFormData);
 
   function handleRegisterFormSubmit(event) {
     event.preventDefault();
@@ -26,10 +26,10 @@ function RegisterPage() {
         updateProfile(result.user, {
           displayName: registerFormData.name,
         }).then(() => {
-          console.log(
-            auth.currentUser.displayName,
-            "auth.currentUser.displayName"
-          );
+          // console.log(
+          //   auth.currentUser.displayName,
+          //   "auth.currentUser.displayName"
+          // );
 
           if (auth.currentUser.displayName) {
             setLoading(false);
